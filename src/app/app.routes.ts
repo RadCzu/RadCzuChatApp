@@ -5,9 +5,9 @@ import { MainViewComponent } from './main-view/main-view.component';
 
 export const routes: Routes = [
 
-  { path: 'Accaount/:id', component: MainViewComponent },
-  { path: 'Login', component: LoginComponent },
-  { path: '', redirectTo: '/Login', pathMatch: 'full' },
+  { path: 'account/:id', component: MainViewComponent },
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({

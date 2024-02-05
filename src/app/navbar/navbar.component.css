@@ -18,3 +18,14 @@
   font-size: 18px;
   cursor: pointer;
 }
+
+.navbar-link {
+  text-decoration: none; /* Usunięcie domyślnego podkreślenia linku */
+  color: inherit; /* Dziedziczenie koloru tekstu od rodzica */
+  cursor: pointer; /* Zmiana kursora na wskazujący na linki */
+  margin-right: 30px;
+}
+
+.navbar-link:hover {
+  text-decoration: underline; /* Podkreślenie linku przy najechaniu myszką */
+}

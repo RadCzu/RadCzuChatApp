@@ -1,0 +1,20 @@
+#main-view {
+  display: grid;
+  grid-template:
+  "left right"
+  /67% 33%;
+
+  height: 100vh;
+}
+
+#leftside {
+  grid-area: left;
+  background-color: red;
+  padding: 20px;
+}
+
+#rightside {
+  grid-area: right;
+  background-color: blue; 
+  padding: 20px;
+}
