@@ -1,0 +1,33 @@
+<div class="login-screen">
+    <h1 class="login-header">Zaloguj się</h1>
+    <div class="login-menu">
+      <div *ngIf="!isConfirmationVisible">
+        <div>
+          <label class="login-label" for="username-input">Nazwa użytkownika:</label>
+        </div>
+        <div>
+          <input type="text" class="username-input" id="username-input" [(ngModel)]="username">
+        </div>
+        <div>
+          <button class="login-button login-menu-button" (click)="showConfirmation()">
+            Zaloguj
+          </button>
+        </div>
+        <div *ngIf="isFieldEmpty" class="empty-error">
+          Nazwa użytkownika jest pusta!!
+        </div>
+      </div>
+
+      <div *ngIf="isConfirmationVisible" class="question-container">
+        <div>
+          Czy {{ username }} to ty?
+        </div>
+        <div>
+          <button class="login-yes-button login-menu-button" (click)="onConfirmation(true)">Tak</button>
+          <button class="login-no-button login-menu-button" (click)="onConfirmation(false)">Nie</button>
+        </div>
+      </div>
+    </div>
+
+ </div>
+

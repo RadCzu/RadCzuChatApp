@@ -1,0 +1,90 @@
+
+.login-screen {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-menu {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width:30%;
+  height:25%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #26a69a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-header{
+  color: #26a69a;
+  font-size: 100px;
+}
+
+.username-input {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #26a69a;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.login-label {
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  width: 80%;
+}
+
+.login-menu-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button {
+  background-color: #26a69a;
+  color: white;
+}
+
+.login-yes-button {
+  background-color: green;
+  color: white;
+  margin-right:5%;
+}
+
+.login-no-button {
+  background-color: red;
+  color: white;
+  margin-left:5%;
+}
+
+.question-container {
+  font-size: 30px;
+  width: 100%;
+  color: #26a69a;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-button:hover {
+  background-color: #034942;
+}
+
+.empty-error {
+  font-size: 15px;
+  color: red;
+  margin-top: 5%;
+}
