@@ -1,9 +1,9 @@
 <div id="main-view">
   <section id="leftside">
-    <app-chat></app-chat>
+    <app-chat *ngIf="selectedChatId !== null && selectedPartnerUsername !== null" [chatId]="selectedChatId" [partnerUsername]="selectedPartnerUsername" [partnerId]="selectedPartnerId"></app-chat>
   </section>
   <section id="rightside">
-    <app-chatlist></app-chatlist>
+    <app-chatlist (chatSelected)="onChatSelected($event)" (partnerUsername)="onPartnerUsernameSelected($event)" (partnerId)="onPartnerIdSelected($event)"></app-chatlist>
   </section>
 
 </div>

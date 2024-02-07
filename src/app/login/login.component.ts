@@ -61,7 +61,6 @@ export class LoginComponent {
         const postSQL = `INSERT INTO user (Username)
         VALUES ('${this.username}');
         `;
-        //SELECT LAST_INSERT_ID() AS User_Id;
         const postUrl = Links.postURL;
         await fetch(postUrl, {
           method: 'POST',

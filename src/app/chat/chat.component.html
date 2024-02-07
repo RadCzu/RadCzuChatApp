@@ -1,1 +1,27 @@
-<p>chat works!</p>
+<div class="chat-container">
+  <div class="chat-body">
+    <div>
+      <h2 class="chat-header">{{ partnerUsername }}</h2>
+    </div>
+    <ul class="chat-content">
+      <ng-container *ngFor="let message of messages">
+        <li *ngIf="message.recieved" class="recieved-message">
+          <div class="message-bubble recieved-bubble">
+            {{ message.content }}
+          </div>
+        </li>
+        <li *ngIf="!message.recieved" class="sent-message">
+          <div class="message-bubble sent-bubble">
+            {{ message.content }}
+          </div>
+        </li>
+      </ng-container>
+    </ul>
+    <form class="chat-input">
+      <input class="chat-input-textfield"  placeholder="Napisz coś..." required [(ngModel)]="messageContent" name="messageContent" #messageInput >
+      <button class="chat-input-button" (click)="sendMessage(messageInput.value)">
+        Wyślij
+      </button>
+    </form>
+  </div>
+</div>

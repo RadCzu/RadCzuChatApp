@@ -1,1 +1,13 @@
-<p>chatlist works!</p>
+<div class="right-sidebar">
+  <h2>Otwarte czaty</h2>
+  <ul class="chat-list">
+    <li class="chat-item" *ngFor="let chat of chatList" (click)="onChatClicked(chat.chatid, chat.name, chat.partnerid)">
+      <img src="../../assets/images/profile-picture.png">
+      <span>{{ chat.name }}</span>
+    </li>
+  </ul>
+  
+  <form class="create-chat-form" (keyup.enter)="createChat(chatListInput.value)">
+    <input type="text" placeholder="Utwórz czat z" required [(ngModel)]="username" name="username" #chatListInput>
+  </form>
+</div>

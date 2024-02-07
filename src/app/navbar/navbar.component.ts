@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+//navbar jest prosty i zawiera tylko link do powrotu do logowania.
+
 @Component({
   selector: 'app-navbar',
   standalone: true,
